@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-pi-assistant",
+  "name": "Pi Assistant",
+  "version": "0.1.3",
+  "minAppVersion": "1.4.0",
+  "author": "andi",
+  "authorUrl": "",
+  "description": "Obsidian 助手：通过 JSONL RPC（pi-rs --mode rpc）调用本机 Pi coding agent，支持流式对话、当前笔记问答、总结/改写。",
+  "isDesktopOnly": true
+}

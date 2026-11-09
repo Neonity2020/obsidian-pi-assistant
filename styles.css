@@ -1,0 +1,18 @@
+.pi-assistant-root { display: flex; flex-direction: column; height: 100%; gap: 8px; padding: 10px; overflow: hidden; }
+.pi-assistant-header { display: flex; justify-content: space-between; align-items: center; }
+.pi-assistant-status { font-size: 11px; opacity: 0.7; }
+.pi-assistant-messages { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; }
+.pi-msg { border: 1px solid var(--background-modifier-border); border-radius: 8px; padding: 8px; }
+.pi-msg-role { font-size: 10px; font-weight: 700; opacity: 0.6; letter-spacing: 0.05em; }
+.pi-msg-user { background: var(--background-secondary); }
+.pi-msg-error { border-color: var(--text-error); }
+.pi-msg-body { white-space: pre-wrap; word-break: break-word; font-size: 13px; line-height: 1.5; margin-top: 4px; }
+.pi-assistant-toolbar { display: flex; flex-wrap: wrap; gap: 6px; }
+.pi-assistant-btn { font-size: 12px; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--background-modifier-border); background: var(--background-secondary); cursor: pointer; }
+.pi-assistant-input { min-height: 70px; resize: vertical; border: 1px solid var(--background-modifier-border); border-radius: 8px; padding: 8px; font-size: 13px; background: var(--background-primary); color: var(--text-normal); }
+.pi-assistant-send { margin-top: 2px; }
+/* AI 消息的 Markdown 渲染（用 Obsidian 自带 MarkdownRenderer） */
+.pi-msg-body.markdown-preview-view { font-size: 13px; line-height: 1.55; word-break: break-word; }
+.pi-msg-body.markdown-preview-view img { max-width: 100%; }
+.pi-msg-body.markdown-preview-view pre { overflow-x: auto; font-size: 12px; }
+.pi-msg-body.markdown-preview-view table { display: block; overflow-x: auto; }
